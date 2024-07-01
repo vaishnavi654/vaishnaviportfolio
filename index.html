@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <!-- Font Awesome CDN link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-GKZu+q0P5NUjBp6v59aVYB5JXq7U8bI2mT59m7fg7+qbsKmHoF6tQD2Y8gdLp+XpqTJRUr6e7wrZ+V36n4NYmA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#internships" onclick="showSection('internships')">Internships</a></li>
+                <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#resume" onclick="showSection('resume')">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="home" class="section active">
+      <div class="container">
+          <h1 id="typewriter"></h1>
+          <div class="social-links">
+              <a href="imagess/linkedin icon.png" target="_blank" class="linkedin">
+                  <img src="C:\Users\vaish\Downloads\linkedin icon.png" alt="LinkedIn">
+              </a>
+              <a href="imagess/github icon.png" target="_blank" class="github">
+                  <img src="C:\Users\vaish\Downloads\github icon.png" alt="GitHub">
+              </a>
+              <a href="mailto:vaishnavireddybadam@gmail.com" target="_blank" class="email">
+                  <img src="imagess/mail icon.png" alt="Email">
+              </a>
+          </div>
+          
+          <!-- Image Section -->
+          <div class="image-section">
+              <h3>ITS ME!!</h3>
+              <img src="imagess/profile.png" alt="Badam Vaishnavi" style="width: 150px;">
+          </div>
+      </div>
+  </div>
+        
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About</h2>
+            <p>A motivated B.Tech undergraduate in Computer Science with strong leadership and continuous learning abilities. Proven success in project management and team collaboration. Seeking a position to apply my problem-solving skills and technical expertise in C, Python, and SQL to drive innovation and achieve organizational goals.</p>
+            
+            <!-- Skills Section -->
+            <div class="skills-section">
+                <h3>Skills</h3>
+                <div class="skills-box">
+                    <div class="skill">C</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">Basic Java</div>
+                    <div class="skill">HTML & CSS</div>
+                    <div class="skill">SQL</div>
+                    <div class="skill">MS Word</div>
+                    <div class="skill">MS PowerPoint</div>
+                </div>
+            </div>
+            
+            <!-- Interests Section -->
+            <div class="interests-section">
+                <h3>Interests</h3>
+                <div class="interests-box">
+                    <div class="interest">Software Engineering</div>
+                    <div class="interest">Web Development</div>
+                    <div class="interest">Algorithms</div>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+    <section id="internships" class="section">
+      <div class="container">
+          <h2>Internships</h2>
+          <div class="internship" onclick="toggleDetails('internship1-details')">
+              <h3>1. Cognifyz Technologies</h3>
+              <img src="imagess/cognifyz logo.png" alt="Cognifyz Technologies" class="internship-logo">
+              <div id="internship1-details" class="internship-details">
+                  <h4>Role: Web Developer</h4>
+                  <p>Duration: May 2024 - June 2024</p>
+                  <p>Description: Produced technical documentation, encompassing user manuals and training materials, to guarantee content accuracy. Utilizing HTML, CSS, and JavaScript to create visually appealing and responsive web pages that met client requirements.</p>
+                  <p><a href="https://drive.google.com/file/d/12OZT1kg5wzCSDEIZSW0Xpg5Y3lM_B7E3/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a></p>
+              </div>
+          </div>
+          
+          <div class="internship" onclick="toggleDetails('internship2-details')">
+              <h3>2. AICTE EDU SKILLS</h3>
+              <img src="imagess/aicte logo.png" alt="AICTE" class="internship-logo">
+              <div id="internship2-details" class="internship-details">
+                  <h4>Role: Google AIML Virtual Intern</h4>
+                  <p>Duration: April 2024 - June 2024</p>
+                  <p>Description: Involved in AI/ML virtual internship, gaining hands-on experience in machine learning models and data analysis. Collaborated on real-world projects, enhancing skills in Python, TensorFlow, and data preprocessing.</p>
+                  <p><a href="https://drive.google.com/file/d/1ziQBUU-g9x3eulcbxYqkeoTYgCorFmzX/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a></p>
+              </div>
+          </div>
+  
+          <div class="internship" onclick="toggleDetails('internship3-details')">
+              <h3>3. MICROCHIP TECHNOLOGY</h3>
+              <img src="imagess/microchip logo.png" alt="MICROCHIP" class="internship-logo">
+              <div id="internship3-details" class="internship-details">
+                  <h4>Role: Embedded System Developer</h4>
+                  <p>Duration: January 2024 - March 2024</p>
+                  <p>Description: Improved existing embedded systems by identifying areas for enhancement and implementing necessary updates. Successfully met challenging performance targets through diligent work and a commitment to quality.</p>
+                  <p><a href="https://drive.google.com/file/d/1h8RKpBkVNGVhPonChFxSnjViAVoIihRK/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a></p>
+              </div>
+          </div>
+  
+          <div class="internship" onclick="toggleDetails('internship4-details')">
+              <h3>4. MOTION CUT</h3>
+              <img src="imagess/motion cut logo.png" alt="MOTION CUT" class="internship-logo">
+              <div id="internship4-details" class="internship-details">
+                  <h4>Role: Web Development Intern</h4>
+                  <p>Duration: February 2024 - March 2024</p>
+                  <p>Description: Engaged in the development of web applications utilizing HTML, CSS, and JavaScript. Provided support in the creation and upkeep of user-friendly websites.</p>
+                  <p><a href="https://drive.google.com/file/d/19R3WpYUmBg_mt8j-9L_t_uxUi29LJeZf/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a></p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project" onclick="toggleDetails('project1-details')">
+                <h3>Project 1: GAME DEVELOPMENT USING PYTHON</h3>
+                <img src="imagess/word guess logo.png" alt="Word Guess Game" class="project-image">
+                <div id="project1-details" class="project-details">
+                    <h4>Description:</h4>
+                    <p>Designed a word guessing game: user input handling and dynamic display implemented essential mechanics. Letter tracking, attempt management, win/loss conditions.</p>
+                    <p><a href="https://drive.google.com/file/d/1P2GTmsz6TOu-kXRwpf4VUTyDEKmpMDOF/view?usp=sharing" target="_blank">View Report</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>hey guys! click me </p>
+            <!-- Example of a direct link to a PDF -->
+            <p><a href="https://drive.google.com/file/d/17p7_THIHqCp3k2AapTRKK370heUbTL6f/view?usp=sharing" target="_blank">View Resume</a></p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-form">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <h3>Name:</h3>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="info-box">
+                        <h3>Email:</h3>
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="info-box">
+                        <h3>Phone:</h3>
+                        <input type="tel" placeholder="Enter your phone number">
+                    </div>
+                </div>
+                <button class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

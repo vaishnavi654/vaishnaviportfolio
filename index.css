@@ -1,0 +1,294 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  display: none;
+  padding: 20px;
+  background: #fff;
+  margin: 20px 0;
+}
+
+.section.active {
+  display: block;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #333;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #0073b1; /* LinkedIn color */
+}
+
+/* Adjust the size and layout of social links */
+.social-links {
+  margin-top: 10px; /* Example margin for spacing */
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px; /* Adjust margin between icons */
+}
+
+.social-links img {
+  width: 25px; /* Adjust the width of the icons */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.linkedin:hover {
+  color: #0073b1;
+}
+
+.github:hover {
+  color: #333;
+}
+
+.email:hover {
+  color: #d44638; /* Gmail color */
+}
+
+/* About Section */
+.skills-section, .interests-section, .image-section {
+  margin-top: 20px;
+}
+
+.skills-section, .interests-section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.skills-section h3, .interests-section h3, .image-section h3 {
+  margin-top: 0;
+}
+
+.skills-box, .interests-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill, .interest {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Internships and Projects Section */
+.internship, .project {
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.internship:hover, .project:hover {
+  background: #f9f9f9;
+}
+
+.internship h3, .project h3 {
+  margin-top: 0;
+}
+
+.internship-logo, .project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.internship-details, .project-details {
+  display: none;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.internship:hover .internship-details, .project:hover .project-details {
+  display: block;
+}
+
+.project-details a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #0073b1; /* LinkedIn color */
+}
+
+.project-details a:hover {
+  color: #004266;
+}
+
+/* Contact Section */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 10px;
+}
+
+.info-box {
+  margin-bottom: 15px;
+}
+
+.info-box h3 {
+  margin-top: 0;
+}
+
+.contact-info input[type="text"], .contact-info input[type="email"], .contact-info input[type="tel"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.submit-btn {
+  background-color: #0073b1; /* LinkedIn color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.submit-btn:hover {
+  background-color: #004266;
+}
+
+/* About Section Styles */
+
+/* Skills and Interests Boxes */
+.skills-section, .interests-section, .image-section {
+  margin-top: 20px;
+}
+
+.skills-section, .interests-section {
+  border: 1px solid #ccc; /* Default border color */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.skills-section h3, .interests-section h3, .image-section h3 {
+  margin-top: 0;
+}
+
+/* Individual Skill and Interest Items */
+.skills-box, .interests-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill, .interest {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #ccc; /* Default border color */
+  border-radius: 3px;
+}
+
+/* Custom Border Colors */
+.skill:nth-child(odd) {
+  border-color: #0073b1; /* Blue border for odd skills */
+}
+
+.skill:nth-child(even) {
+  border-color: #d44638; /* Red border for even skills */
+}
+
+.interest:nth-child(odd) {
+  border-color: #3cba54; /* Green border for odd interests */
+}
+
+.interest:nth-child(even) {
+  border-color: #ffbb00; /* Yellow border for even interests */
+}
+
+/* Image Section */
+.image-section {
+  margin-top: 20px;
+}
+
+.image-section h3 {
+  margin-top: 0;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-link {
+  color: #0073b1; /* Blue color */
+  text-decoration: none; /* Remove underline by default */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.certificate-link:hover {
+  color: #004266; /* Darker shade of blue on hover */
+  text-decoration: underline; /* Underline on hover */
+}
